@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="header container">
+    <div class="heading">
+        <h1>To-Do List</h1>
+    </div>
+    <div class="input_field">
+        <input type="text" placeholder="Item Name" id="task_detail">
+        <input placeholder="Deadline" id="date" type="text" onfocus="(this.type='date')" onblur="(this.type='text')">
+        <select id="priority">
+            <option disabled="" selected="">Priority</option>
+            <option value="high">High</option>
+            <option value="medium">Medium</option>
+            <option value="low">Low</option>
+            Add Item
+        </select>
+        <button type="button" id="main_btn">Add Item</button>
+    </div>
+    </section>
+
+    <section class="today_todo container">
+        <p class="heading_small">Today’s TodoList</p>
+        <div id="Today_box_container1">
+            <!-- <div class="taskbox">
+                <p class="tasktext firsttext">1. arbaj</p>
+                <p class="tasktext">23/06/2024</p>
+                <p class="tasktext">High</p>
+                <div class="lasttexticon">
+                    <img src="CompletedIcon.svg">
+                    <img src="DeleteIcon.svg">
+                </div>
+            </div> -->
+        </div>
+    </section>
+
+
+    <section class="today_todo container">
+        <p class="heading_small">Future TodoList</p>
+        <div id="Today_box_container2">
+            <!-- <div class="taskbox">
+                <p class="tasktext firsttext">1. arbaj</p>
+                <p class="tasktext">23/06/2024</p>
+                <p class="tasktext">High</p>
+                <div class="lasttexticon">
+                    <img src="CompletedIcon.svg">
+                    <img src="DeleteIcon.svg">
+                </div>
+            </div> -->
+        </div>
+
+    </section>
+
+
+    <section class="complete_todo container">
+        <p class="heading_small">Completed TodoList</p>
+        <div id="Today_box_container3">
+            <!-- <div class="taskbox_c">
+                <p class="tasktext1 firsttext">1. arbaj</p>
+                <p class="tasktext1">23/06/2024</p>
+                <p class="tasktext1">High</p>
+                <div class="lasttexticon">
+                    <img src="blackdeleteicon.svg">
+                </div>
+            </div> -->
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
